@@ -17,13 +17,20 @@ alert ('Введеное значение не является числом');
 showResult(nums)
 }
 }
+readyBtn.addEventListener('click', result);
+
+function result(){
+    showResult(nums);
 }
+}
+
 function showResult(arr) {
 arr.sort();
 let sum = 0;
 for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
 }
-alert('filtered: ' +  arr + ' sum: ' + sum);
+alert('Введенные значения: ' +  arr + ' Сумма: ' + sum);
 }
+
 sumInput()
